@@ -7,8 +7,10 @@ from flask import Flask, render_template, request, redirect, url_for, session
 code_candidate = list(string.ascii_letters) + list(string.digits)
 
 static_folder = Path.cwd()
+#print(static_folder.parents[0])
 
-app = Flask(__name__, template_folder=str(static_folder.parents[0]), static_folder=str(static_folder.parents[0] / "css"))
+#app = Flask(__name__, template_folder=str(static_folder.parents[0]), static_folder=str(static_folder.parents[0] / "css"))
+app = Flask(__name__, template_folder=str(static_folder), static_folder=str(static_folder / "css"))
 
 app.secret_key = 'A0Zr9foijaoe090'
 
@@ -64,4 +66,4 @@ def login_view(room_id):
     """
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port="5000")
