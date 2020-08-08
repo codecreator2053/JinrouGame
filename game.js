@@ -1,9 +1,8 @@
 // var this.timer = setInterval(function foo(){};, 10000);
-var timer = 0;
-console.log(typeof(timer));
+var timer = [];
 function changeColor(){
-	timer = setInterval(randColor, 100);
-	console.log(typeof(timer));
+	// if (type)
+	timer.push(setInterval(randColor, 100));
 }
 
 function randColor(){
@@ -28,11 +27,10 @@ let chg_btn = document.getElementById("change");
 chg_btn.onclick = changeColor;
 
 function stopChange(){
-	console.log("clicked")
-	console.log(typeof(timer));
-	clearInterval(timer);
+	for (var i = 0; i < timer.length; i++) {
+		clearInterval(timer[i]);
+	}
 }
-
 
 let stop_btn =  document.getElementById("stop");
 stop_btn.onclick = stopChange;
