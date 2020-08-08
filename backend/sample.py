@@ -30,6 +30,7 @@ def vote(room_id):
     Args:
         result: {'from': 'username1', 'to': 'username2'}
     """
+
     print(request.json['from'], request.json['to'])
     return redirect(url_for('main', room_id=room_id))
 
