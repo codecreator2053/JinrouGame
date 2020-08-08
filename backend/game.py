@@ -8,7 +8,7 @@ NIGHT = 1
 class Game(object):
     """Game object
 
-    Having property and methods to control game.
+    Has property and methods to control game.
     """
 
     def __init__(self, code):
