@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-.button {
+button {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -8,5 +8,15 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
+}
+
+h1 {
+  color: purple;
+}
+p {
+  color: blue;
+}
+body {
+  background-image: url('resources/grass_yello.jpg');
 }
