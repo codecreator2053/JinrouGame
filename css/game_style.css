@@ -44,5 +44,5 @@ p {
   color: blue;
 }
 body {
-  background-image: url('resources/grass_yello.jpg');
+  background-image: url('../resources/grass_yello.jpg');
 }
