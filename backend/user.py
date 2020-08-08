@@ -1,7 +1,8 @@
 
 class User(object):
-    def __init__(self, name):
+    def __init__(self, name, idx):
         self.name = user_name
+        self.user_idx = idx
         self.role = None
         self.is_alive = True
 

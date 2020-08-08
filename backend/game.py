@@ -18,6 +18,22 @@ class Game(object):
         self.users = {}
         self.roles = []
         self.num_werewolf = 0
+        self.visible_matrix = None
+
+    def start_game(self):
+        num_user = len(self.users)
+        self.generate_role()
+        self.allocate_role_to_users()
+        self.visible_matrix = [[int(i==j) for i in range(num_user)] for j in range(num_user)]
+
+    def _exchange_role(self, src_user, tgt_user):
+        tmp = self.users[src_user].role
+        self.users[src_user].role = self.users[tgt_user].role
+        self.users[tgt_user].role = tmp
+
+    def _visualize_user(self, src_user, tgt_user):
+        src_idx, tgt_idx = self.users[src_user].user_idx, self.users[tgt_user].user_idx
+        self.visible_matrix[src_idx][tgt_idx] = True
 
     def add_user(self, username):
         """Add user to users property
@@ -26,7 +42,7 @@ class Game(object):
             username (str): username
         """
 
-        user = User(username)
+        user = User(username, len(self.users))
         self.users[username] = user
 
     def generate_role(self, num_members):
