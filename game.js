@@ -7,7 +7,7 @@ function changeColor(){
 
 function randColor(){
 	code = '#' + addColorCode('');
-	console.log(code);
+	// console.log(code);
 	document.body.style.background = code;
 }
 
@@ -30,6 +30,7 @@ function stopChange(){
 	for (var i = 0; i < timer.length; i++) {
 		clearInterval(timer[i]);
 	}
+	document.body.style.background = '#99cc00';
 }
 
 let stop_btn =  document.getElementById("stop");

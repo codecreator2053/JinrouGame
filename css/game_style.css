@@ -1,7 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 button {
-  background-color: #4CAF50; /* Green */
+  /*background-color: #4CAF50; */
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+
+
+/*#change {
+  background-color: black; 
+  /*background: black;*/
   border: none;
   color: white;
   padding: 15px 32px;
@@ -10,27 +25,14 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-}
-
-
-#change {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  margin: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-}
+}*/
 
 label {
-  background-color: #4CAF50; /* Green */
+  /*background-color: #4CAF50; /* Green */*/
   border: none;
   color: white;
   padding: 15px 32px;
-  margin: 30px;
+  margin: 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -41,8 +43,9 @@ h1 {
   color: black;
 }
 p {
-  color: blue;
+  color: black;
 }
 body {
-  background-image: url('../resources/grass_yello.jpg');
+  /*background-image: url('../resources/grass_yello.jpg');*/
+  background: #99cc00;
 }
