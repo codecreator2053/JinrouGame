@@ -14,13 +14,23 @@ app = Flask(__name__, template_folder=str(static_folder), static_folder=str(stat
 
 app.secret_key = 'A0Zr9foijaoe090'
 
-@app.route("/", methods=['POST', 'GET'])
+@app.route("/", methods=['GET', "POST"])
 def top_page():
-    session['room'] = ''.join(random.choices(code_candidate, k=4))
+    if request.method == "POST":
+        select_time = request.form.get("select_time")
+        select_member = request.form.get("select_member")
+        session['room'] = ''.join(random.choices(code_candidate, k=4))
+        return redirect(url_for("admin_wait", room_id=session["room"]))
+
     return render_template('home.html')
 
 
-@app.route("/<room_id>")
+@app.route("/<room_id>/game-start")
+def admin_wait(room_id):
+    return render_template("admin_wait.html")
+
+
+@app.route("/<room_id>", methods=["GET"])
 def main(room_id):
     if "username" in session:
         print("Hello " + str(session['username']))
