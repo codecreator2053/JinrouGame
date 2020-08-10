@@ -90,5 +90,8 @@ class Game(object):
 
         self.users[username].is_alive = False
 
+    def act_at_night(self, username, target):
+        self.users[username].act_at_night(self, target)
+
 
 

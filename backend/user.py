@@ -9,6 +9,6 @@ class User(object):
     def vote(self):
         pass
 
-    def act_at_night(self):
-        pass
+    def act_at_night(self, game, username):
+        self.role.act_at_night(game, username, target)
 
