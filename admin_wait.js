@@ -37,7 +37,7 @@ let stop_btn =  document.getElementById("stop");
 stop_btn.onclick = stopChange;
 
 counter=0;
-setInterval(incPeople, 5000);
+setInterval(incPeople, 2000);
 function incPeople(){
 	// console.log("running");
 	counter++;
