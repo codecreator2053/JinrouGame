@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>One-Night Jinro (Nyctophile)</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="../static/css/home_style.css" type="text/css">
+</head>
+	<body> 
+		<div data-role="header" class="header">
+			 <h1 class="header" tabindex="0" role="heading" aria-level="1">One-night Jinro</h1>
+		</div>
+		<div class = 'title' aria-level="1">
+			<h1 class="title"  align = 'center'>One-Night Jinro: Nyctophile</h1>
+		</div>
+		<div class = 'description' aria-level="2">
+			<h2 class='topic'>What's Jinro</h3>
+			<p  class="title">Description</p>
+		</div>
+                <form method="POST">
+                    <div class = 'description' aria-level="2">
+                            <h2 class = 'topic' aria-level="2">Create Room</h2>
+                            <p  class="title">Description</p>
+                            <div class ='start_btn'>
+                                    <button type="submit" class="btn btn-primary btn-lg" align = 'center'>Create Room</button>
+                                    <h4 class='setting'>start settings</h4>
+                            </div>
+                    <div class="select-time">
+                            <div class="form-group">
+                            <label for="select_time">Select discussion time:</label>
+                            <select id="select_time" class="form-control" name="select_time">
+                                    <option value='60'>1 minitue</option>
+                                    <option value='120'>2 minitues</option>
+                                    <option value="180" selected="selected">3 minitues</option>
+                                    <option value="300">5 minitues</option>
+                                    <option value="360">6 minitues</option>
+                                    <option value="600">10 minitues</option>
+                                    <option value="900">15 minitues</option>
+                                    <option value="0">unlimited</option>
+                            </select>
+                            </div>
+                    </div>
+                    <div class="select-member">
+                            <div class="form-group">
+                            <label for="select_member">Select the number of members:</label>
+                            <select id="select_member" class="form-control" name="select_member">
+                                    <option value='4'>4 members</option>
+                                    <option value='5'>5 members</option>
+                                    <option value='6' selected="selected">6 members</option>
+                                    <option value='7'>7 members</option>
+                                    <option value='8'>8 members</option>
+                                    <option value='9'>9 members</option>
+                            </select>
+                            </div>
+                    </div>
+                </form>
+
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	</body>
+</html>
